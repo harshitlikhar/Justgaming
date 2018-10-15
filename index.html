@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<script src="script.js" type="text/javascript" ></script>
+
+<title>User Registration</title>
+</head>
+
+<body bgcolor=#66c2ff>
+
+    <div id="sidebar">
+        <br/>
+        <br/>
+        <center>
+        <font style="font-size: 25px;" id="userreg" color="orange" face="raleway"  >USER REGISTRATION<br/></font>
+        <br/><br/>
+        <font face="raleway" color="orange">STATUS : </font><font id="userreg" color="white" face="raleway" >REGISTRATIONS OPEN</font>
+        <br/><br/>
+        <font face="raleway" color="orange">LAST DATE : </font><font id="userreg" color="white" face="raleway" >31/8/18</font>
+        <br/>
+        <br/>
+        <p id="status"></p>
+        </center>
+    </div>
+    
+    <div id="rpart"><br/><br/>
+        <div id="header" ><center><font size="+2" face="raleway">REGISTRATION FORM</font></center>
+        </div>
+        <br/><br/>
+        <hr/>
+        
+        <div id="form" >
+            <br/>
+            
+           <form name="myform" method="post" onsubmit="return infodisp()">
+            
+                Name :&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                <input id="name" name="name" type="text" placeholder="Enter name here...." onkeypress="revertname()" />&nbsp;
+                <font color="red"><span id="namestatus"></span></font><br/><br/>
+           
+                Age :     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp; 
+                <input name="age" onchange="agecheck()" id="age" placeholder="Enter age here...." type="number" onkeypress="revertage()"/>&nbsp;
+                <font color="red"><span id="agestatus"></span></font><br/><br/>
+           
+           
+                Email Id : &nbsp;&nbsp;&nbsp;&nbsp;<input name="mail" id="mail" onchange="mailcheck()" placeholder="Enter email here...." type="email" onkeypress="revertmail()"/>&nbsp;
+                <font color="red"><span id="mailstatus"></span></font><br/><br/>
+                Institution : &nbsp;<input id="ins" name="ins" placeholder="Name of institution here...." type="text" onkeypress="revertinst()"/>&nbsp;
+                <font color="red"><span id="inststatus"></span></font><br/><br/>
+                <br/>
+                <input id="submit_button" type="submit" value="SUBMIT" />
+            
+            </form>
+           
+            
+            <br/>
+        </div>
+        <hr/>
+    </div>
+
+</body>
+</html>
